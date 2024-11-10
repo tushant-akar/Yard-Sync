@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.yardsync.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_incomingActivity"
+            app:destination="@id/incomingActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_outgoingActivity"
+            app:destination="@id/outgoingActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_yardFragment"
+            app:destination="@id/yardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yardFragment"
+        android:name="com.example.yardsync.ui.fragments.YardFragment"
+        android:label="fragment_yard"
+        tools:layout="@layout/fragment_yard" />
+    <fragment
+        android:id="@+id/scanFragment"
+        android:name="com.example.yardsync.ui.fragments.ScanFragment"
+        android:label="fragment_scan"
+        tools:layout="@layout/fragment_scan" />
+    <fragment
+        android:id="@+id/recordsFragment"
+        android:name="com.example.yardsync.ui.fragments.RecordsFragment"
+        android:label="fragment_records"
+        tools:layout="@layout/fragment_records" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.yardsync.ui.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_landingActivity"
+            app:destination="@id/landingActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/incomingActivity"
+        android:name="com.example.yardsync.ui.IncomingActivity"
+        android:label="activity_incoming"
+        tools:layout="@layout/activity_incoming" />
+    <activity
+        android:id="@+id/outgoingActivity"
+        android:name="com.example.yardsync.ui.OutgoingActivity"
+        android:label="activity_outgoing"
+        tools:layout="@layout/activity_outgoing" />
+    <activity
+        android:id="@+id/landingActivity"
+        android:name="com.example.yardsync.ui.LandingActivity"
+        android:label="activity_landing"
+        tools:layout="@layout/activity_landing" />
+</navigation>
