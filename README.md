@@ -1,5 +1,9 @@
 # YardSync - Streamlining Yard Management
 
+## Login Credentials
+Email ID: tushant@yardsync.com
+Password: 123456
+
 ## Introduction
 Welcome to YardSync, an innovative Yard Management System designed to optimize the efficiency of supply chain operations. This repository hosts the complete codebase for YardSync, offering a comprehensive solution to address the challenges faced in yard management.
 
