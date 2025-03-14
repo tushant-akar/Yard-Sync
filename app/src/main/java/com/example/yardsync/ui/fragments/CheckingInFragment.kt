@@ -54,11 +54,6 @@ class CheckingInFragment : Fragment() {
 
         viewModel = ViewModelProvider(this)[VehicleViewModel::class.java]
 
-        val description = arrayOf("Vehicle", "Driver", "Checking In")
-        binding.stateProgressBar.setStateDescriptionData(description)
-        binding.stateProgressBar.setStateDescriptionTypeface("font/nunito_medium.ttf")
-        binding.stateProgressBar.setStateNumberTypeface("font/nunito_medium.ttf")
-
         vehicle = sharedViewModel.vehicle
         vehicleImageUri = sharedViewModel.vehicleImageUri.toUri()
 

@@ -2,16 +2,16 @@ package com.example.yardsync.viewModel
 
 import android.util.Log
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.ViewModel
-import com.example.yardsync.model.Vehicle
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.yardsync.model.Vehicle
 import com.example.yardsync.utils.Supabase.client
 import io.github.jan.supabase.postgrest.from
 import kotlinx.coroutines.launch
 
 
-class RecordsViewModel: ViewModel() {
+class RecordsViewModel : ViewModel() {
     private val _records = MutableLiveData<List<Vehicle>>()
     val records: LiveData<List<Vehicle>> = _records
 

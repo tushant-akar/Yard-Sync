@@ -7,18 +7,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.net.toUri
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.navArgs
 import coil.load
 import com.example.yardsync.R
 import com.example.yardsync.databinding.FragmentDriverRegisterationBinding
 import com.example.yardsync.model.VehicleNavArgs
 import com.example.yardsync.viewModel.VehicleRegisterationViewModel
-import kotlinx.coroutines.launch
 
 class DriverRegisterationFragment : Fragment() {
     private var _binding: FragmentDriverRegisterationBinding? = null
@@ -40,10 +36,6 @@ class DriverRegisterationFragment : Fragment() {
         vehicle = sharedViewModel.vehicle
         vehicleImageUri = sharedViewModel.vehicleImageUri
 
-
-        Log.d("DriverRegisterationFragment", "Vehicle: $vehicle")
-        Log.d("DriverRegisterationFragment", "Vehicle Image Uri: $vehicleImageUri")
-
         val sharedPreferences = requireContext().getSharedPreferences("DriverData", MODE_PRIVATE)
         val editor = sharedPreferences.edit()
 
@@ -52,11 +44,6 @@ class DriverRegisterationFragment : Fragment() {
         val driverPhone = sharedPreferences.getString("driverPhone", "")
         val driverLicense = sharedPreferences.getString("driverLicenseNumber", "")
         val driverPhoto = sharedPreferences.getString("driverPhoto", "")
-
-        val description = arrayOf("Vehicle", "Driver", "Checking In")
-        binding.stateProgressBar.setStateDescriptionData(description)
-        binding.stateProgressBar.setStateDescriptionTypeface("font/nunito_medium.ttf")
-        binding.stateProgressBar.setStateNumberTypeface("font/nunito_medium.ttf")
 
         binding.edtID.setText(driverId)
         binding.edtName.setText(driverName)

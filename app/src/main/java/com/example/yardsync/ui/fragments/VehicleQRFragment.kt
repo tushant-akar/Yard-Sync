@@ -113,7 +113,6 @@ class VehicleQRFragment : Fragment() {
     }
 
 
-
     private fun generateQRCode(): Drawable {
         val data = QrData.Text(vehicleNumber)
 
@@ -134,7 +133,6 @@ class VehicleQRFragment : Fragment() {
         Log.d("QR", "QR Code Generated")
         return drawable
     }
-
 
 
     override fun onDestroyView() {

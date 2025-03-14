@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.net.toUri
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -42,10 +41,14 @@ class VehicleOutgoingFragment : Fragment() {
 
         viewModel.vehicle.observe(viewLifecycleOwner) { vehicle ->
             vehicle?.let {
-                binding.edtPersons.text = Editable.Factory.getInstance().newEditable(vehicle.accompaniedPersons.toString())
-                binding.edtVehicletype.text = Editable.Factory.getInstance().newEditable(vehicle.vehicleType)
-                binding.edtVehicleNumber.text = Editable.Factory.getInstance().newEditable(vehicle.vehicleNumber)
-                binding.edtIncomingWeight.text = Editable.Factory.getInstance().newEditable(vehicle.incomingWeight.toString())
+                binding.edtPersons.text = Editable.Factory.getInstance()
+                    .newEditable(vehicle.accompaniedPersons.toString())
+                binding.edtVehicletype.text =
+                    Editable.Factory.getInstance().newEditable(vehicle.vehicleType)
+                binding.edtVehicleNumber.text =
+                    Editable.Factory.getInstance().newEditable(vehicle.vehicleNumber)
+                binding.edtIncomingWeight.text =
+                    Editable.Factory.getInstance().newEditable(vehicle.incomingWeight.toString())
                 binding.vehicleImage.load(vehicle.vehicleImageUrl) {
                     crossfade(true)
                 }

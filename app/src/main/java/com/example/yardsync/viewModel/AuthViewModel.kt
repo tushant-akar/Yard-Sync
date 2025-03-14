@@ -11,8 +11,8 @@ import com.example.yardsync.model.Employee
 import com.example.yardsync.model.EmployeeState
 import com.example.yardsync.utils.DataStoreManager
 import com.example.yardsync.utils.Supabase.client
-import io.github.jan.supabase.gotrue.auth
-import io.github.jan.supabase.gotrue.providers.builtin.Email
+import io.github.jan.supabase.auth.auth
+import io.github.jan.supabase.auth.providers.builtin.Email
 import io.github.jan.supabase.postgrest.from
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch

@@ -42,7 +42,14 @@ class VehicleViewModel : ViewModel() {
         }
     }
 
-    fun updateVehicleDetails(vehicleNumber: String, timeOut: String, outgoingWeight: Int, origin: String, destination: String, onResult: (Boolean, String?) -> Unit) {
+    fun updateVehicleDetails(
+        vehicleNumber: String,
+        timeOut: String,
+        outgoingWeight: Int,
+        origin: String,
+        destination: String,
+        onResult: (Boolean, String?) -> Unit
+    ) {
         viewModelScope.launch {
             try {
                 client.from("vehicle").update({

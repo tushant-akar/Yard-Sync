@@ -3,13 +3,13 @@ import java.util.Properties
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-    kotlin("plugin.serialization") version "1.9.0"
+    kotlin("plugin.serialization") version "2.1.10"
     id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
     namespace = "com.example.yardsync"
-    compileSdk = 34
+    compileSdk = 35
 
     val file = rootProject.file("local.properties")
     val properties = Properties()
@@ -18,7 +18,7 @@ android {
     defaultConfig {
         applicationId = "com.example.yardsync"
         minSdk = 27
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -51,11 +51,11 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
 }
 
@@ -94,7 +94,7 @@ dependencies {
     implementation(libs.coil)
 
     //State Progress
-    implementation(libs.stateprogressbar.v009)
+    implementation(libs.stateprogressbar)
 
     //Custom Spinner
     implementation(libs.dropsy)

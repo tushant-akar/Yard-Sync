@@ -42,14 +42,20 @@ class YardParentAdapter(
         return when (viewType) {
             0 -> {
                 val binding =
-                    CarouselViewItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+                    CarouselViewItemBinding.inflate(
+                        LayoutInflater.from(parent.context),
+                        parent,
+                        false
+                    )
                 MainViewHolder(binding)
             }
+
             1 -> {
                 val binding =
                     ParkingLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
                 ParkingViewHolder(binding)
             }
+
             else -> throw IllegalArgumentException("Invalid view type")
         }
     }
@@ -63,6 +69,7 @@ class YardParentAdapter(
             0 -> {
                 (holder as MainViewHolder).bind(dockList[position])
             }
+
             1 -> {
                 (holder as ParkingViewHolder).bind()
             }
