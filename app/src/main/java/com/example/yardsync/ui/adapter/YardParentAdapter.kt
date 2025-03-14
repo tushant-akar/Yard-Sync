@@ -33,7 +33,7 @@ class YardParentAdapter(
         }
     }
 
-    inner class ParkingViewHolder(private val binding: ParkingLayoutBinding) :
+    inner class ParkingViewHolder(binding: ParkingLayoutBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind() {}
     }
