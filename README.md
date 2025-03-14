@@ -1,5 +1,9 @@
 # YardSync - Streamlining Yard Management
 
+## Login Credentials
+- Email ID: tushant@yardsync.com
+- Password: 123456
+
 ## Introduction
 Welcome to YardSync, an innovative Yard Management System designed to optimize the efficiency of supply chain operations. This repository hosts the complete codebase for YardSync, offering a comprehensive solution to address the challenges faced in yard management.
 
@@ -36,7 +40,7 @@ YardMaster is built using the following technologies:
 - **Frontend:** Android(XML) - A fast and expressive framework for building natively compiled android applications for mobile.
 - **Backend:** Supabase - A remote database and cloud storage for seamless synchronization.
 - **Authentication:** Supabase Authentication - Secure email authentication to protect user data.
-- **ML Model:** Python - Smart Dock allocation
+- **ML Model:** Gemini - Smart Dock allocation
 - **Data Storage:** Supabase Storage - Scalable cloud storage for data management.
 
 ## Acknowledgments
