@@ -1,13 +1,13 @@
 # YardSync - Streamlining Yard Management
 
-<img src="images\1.jpeg" height="300em" /> &ensp; <img src="images\2.jpeg" height="300em" /> &ensp;
-<img src="images\3.jpeg" height="300em" /> &ensp; <img src="images\4.jpeg" height="300em" />
+<img src="images\1.png" height="300em" /> &ensp; <img src="images\2.png" height="300em" /> &ensp;
+<img src="images\3.png" height="300em" /> &ensp; <img src="images\4.png" height="300em" />
 
-<img src="images\5.jpeg" height="300em" /> &ensp; <img src="images\6.jpeg" height="300em" /> &ensp;
-<img src="images\7.jpeg" height="300em" /> &ensp; <img src="images\8.jpeg" height="300em" />
+<img src="images\5.png" height="300em" /> &ensp; <img src="images\6.png" height="300em" /> &ensp;
+<img src="images\7.png" height="300em" /> &ensp; <img src="images\8.png" height="300em" />
 
-<img src="images\9.jpeg" height="300em" /> &ensp; <img src="images\10.jpeg" height="300em" /> &ensp;
-<img src="images\11.jpeg" height="300em" /> &ensp; <img src="images\12.jpeg" height="300em" />
+<img src="images\9.png" height="300em" /> &ensp; <img src="images\10.png" height="300em" /> &ensp;
+<img src="images\11.png" height="300em" /> &ensp; <img src="images\12.png" height="300em" />
 
 ## Login Credentials
 - Email ID: tushant@yardsync.com
