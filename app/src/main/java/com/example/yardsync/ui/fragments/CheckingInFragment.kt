@@ -52,6 +52,9 @@ class CheckingInFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val description = arrayOf("Vehicle", "Driver", "Checking In")
+        binding.stateProgressBar.setStateDescriptionData(description)
+
         viewModel = ViewModelProvider(this)[VehicleViewModel::class.java]
 
         vehicle = sharedViewModel.vehicle

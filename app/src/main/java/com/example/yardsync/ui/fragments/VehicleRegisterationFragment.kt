@@ -35,6 +35,9 @@ class VehicleRegisterationFragment : Fragment() {
             pickImage.launch("image/*")
         }
 
+        val description = arrayOf("Vehicle", "Driver", "Checking In")
+        binding.stateProgressBar.setStateDescriptionData(description)
+
         binding.continueBtn.setOnClickListener {
             vehicleNumber = binding.edtVehicleNumber.text.toString().trim()
             vehicleType = binding.edtVehicletype.text.toString().trim()

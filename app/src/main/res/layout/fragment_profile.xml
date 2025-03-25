@@ -73,7 +73,6 @@
             android:layout_height="match_parent"
             android:enabled="false"
             android:fontFamily="@font/nunito_bold"
-            android:text="@string/app_name"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
@@ -99,7 +98,6 @@
             android:layout_height="match_parent"
             android:enabled="false"
             android:fontFamily="@font/nunito_bold"
-            android:text="@string/app_name"
             android:textColor="@color/black"
             android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -124,7 +122,6 @@
             android:layout_height="match_parent"
             android:enabled="false"
             android:fontFamily="@font/nunito_bold"
-            android:text="@string/app_name"
             android:textColor="@color/black"
             android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -149,7 +146,6 @@
             android:layout_height="match_parent"
             android:enabled="false"
             android:fontFamily="@font/nunito_bold"
-            android:text="@string/app_name"
             android:textColor="@color/black"
             android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>

@@ -1,5 +1,5 @@
 [versions]
-agp = "8.7.3"
+agp = "8.9.1"
 androidGifDrawable = "1.2.29"
 codeScanner = "2.3.2"
 coil = "2.7.0"
@@ -20,7 +20,7 @@ constraintlayout = "2.2.1"
 navigationFragmentKtx = "2.8.9"
 navigationUiKtx = "2.8.9"
 segmentedprogressbarVersion = "0.8.1"
-stateprogressbarVersion = "1.0.0"
+stateprogressbarVersion = "69b419277"
 storageKt = "3.1.2"
 uiGraphicsAndroid = "1.7.8"
 uiUnitAndroid = "1.7.8"
@@ -37,7 +37,7 @@ coil = { module = "io.coil-kt:coil", version.ref = "coil" }
 curved_bottom_navigation = { module = "np.com.susanthapa:curved_bottom_navigation", version.ref = "curved_bottom_navigation" }
 custom-qr-generator = { module = "com.github.alexzhirkevich:custom-qr-generator", version.ref = "customQrGenerator" }
 dropsy = { module = "com.github.qandeelabbassi:Dropsy", version.ref = "dropsy" }
-gotrue-kt = { module = "io.github.jan-tennert.supabase:gotrue-kt", version.ref = "storageKt" }
+gotrue-kt = { module = "io.github.jan-tennert.supabase:auth-kt", version.ref = "storageKt" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -49,7 +49,7 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
 postgrest-kt = { module = "io.github.jan-tennert.supabase:postgrest-kt", version.ref = "storageKt" }
-stateprogressbar = { module = "com.kofigyan.stateprogressbar:stateprogressbar", version.ref = "stateprogressbarVersion" }
+stateprogressbar-v009 = { module = "com.github.kofigyan:StateProgressBar", version.ref = "stateprogressbarVersion" }
 storage-kt = { module = "io.github.jan-tennert.supabase:storage-kt", version.ref = "storageKt" }
 androidx-ui-graphics-android = { group = "androidx.compose.ui", name = "ui-graphics-android", version.ref = "uiGraphicsAndroid" }
 androidx-ui-unit-android = { group = "androidx.compose.ui", name = "ui-unit-android", version.ref = "uiUnitAndroid" }

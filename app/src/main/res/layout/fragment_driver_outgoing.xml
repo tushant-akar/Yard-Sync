@@ -20,6 +20,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <com.kofigyan.stateprogressbar.StateProgressBar
+            android:id="@+id/state_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:spb_animateToCurrentProgressState="true"
+            app:spb_checkStateCompleted="true"
+            app:spb_currentStateDescriptionColor="@color/headlineText"
+            app:spb_currentStateNumber="two"
+            app:spb_descriptionTopSpaceIncrementer="5dp"
+            app:spb_maxStateNumber="three"
+            app:spb_stateBackgroundColor="@color/grey"
+            app:spb_stateDescriptionColor="@color/grey"
+            app:spb_stateDescriptionSize="12dp"
+            app:spb_stateForegroundColor="@color/themeColorDark"
+            app:spb_stateNumberBackgroundColor="@color/headlineText"
+            app:spb_stateNumberForegroundColor="@color/white"
+            app:spb_stateSize="30dp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView

@@ -44,6 +44,9 @@ class DriverRegisterationFragment : Fragment() {
         val driverLicense = sharedPreferences.getString("driverLicenseNumber", "")
         val driverPhoto = sharedPreferences.getString("driverPhoto", "")
 
+        val description = arrayOf("Vehicle", "Driver", "Checking In")
+        binding.stateProgressBar.setStateDescriptionData(description)
+
         binding.edtID.setText(driverId)
         binding.edtName.setText(driverName)
         binding.edtPhone.setText(driverPhone)

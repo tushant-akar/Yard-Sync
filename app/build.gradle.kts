@@ -94,7 +94,7 @@ dependencies {
     implementation(libs.coil)
 
     //State Progress
-    implementation(libs.stateprogressbar)
+    implementation(libs.stateprogressbar.v009)
 
     //Custom Spinner
     implementation(libs.dropsy)
